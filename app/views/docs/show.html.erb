@@ -1,0 +1,8 @@
+<h2> Created doc </h2>
+<% if @doc.present? %>
+	<%= @doc.title %><br><br>
+	<%= @doc.content %>
+<% end %>
+
+<br><br><br>
+<%= link_to "List all the docs", docs_path %>

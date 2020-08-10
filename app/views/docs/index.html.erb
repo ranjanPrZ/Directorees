@@ -1,0 +1,8 @@
+<% if @docs.present? %>
+	<% @docs.each do |doc| %>
+		<h3><%= doc.title %></h3>
+		<p><%= doc.content %></p>
+	<% end %>
+<% end %> 
+
+<%= link_to 'Add Doc', new_doc_path %>

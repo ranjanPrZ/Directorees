@@ -1,0 +1,9 @@
+<h2>Enter the document's title and it's contents.</h2>
+<%= form_for @doc do |f| %>
+	<%= label_tag :Title %>
+	<%= f.text_field :title %><br />
+	<%= label_tag :Contents %>
+	<%= f.text_area :content %> </br>
+
+	<%= f.submit %>
+	<% end %>
